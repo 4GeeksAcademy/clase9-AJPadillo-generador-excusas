@@ -21,19 +21,19 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let whoRandom = who[Math.floor(Math.random() * who.length)];
-  let randAction = Math.floor(Math.random() * action.length);
-  let randWhat = Math.floor(Math.random() * what.length);
-  let randWhen = Math.floor(Math.random() * when.length);
+  let whoRandom = Math.floor(Math.random() * who.length);
+  let actRandom = Math.floor(Math.random() * action.length);
+  let whatRandom = Math.floor(Math.random() * what.length);
+  let whenRandom = Math.floor(Math.random() * when.length);
 
   let sumExcuses =
-    who[randWho] +
+    who[whoRandom] +
     " " +
-    action[randAction] +
+    action[actRandom] +
     " " +
-    what[randWhat] +
+    what[whatRandom] +
     " " +
-    when[randWhen];
+    when[whenRandom];
 
   document.getElementById("excuse").innerText = sumExcuses;
 };
